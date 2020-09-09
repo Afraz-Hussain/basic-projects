@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Imageslider</title>
+</head>
+<body>
+	<link rel="stylesheet" type="text/css" href="slider.css">
+	
+	<div id="slidshow">
+<h1 style="color: blue">ImageSliderUsingJavascript</h1>
+<hr>
+<img src="images/hunter.jpg" id="slider">
+</div>
+<script type="text/javascript">
+	var images=["images/m1.jpg","images/m2.jpg","images/m3.jpg","images/m4.jpg","images/pic2.jpg","images/pic3.jpg","images/pic4.jpg","images/roza.jpg","images/pakistan.jpg"];
+	var i=0;
+	function slides()
+	{
+		document.getElementById('slider').src=images[i];
+		if(i<(images.length-1))
+			i++;
+		else
+			i=0;
+	}
+	setInterval(slides,1000); 
+</script>
+</body>
+
+</html>

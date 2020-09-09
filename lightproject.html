@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BulbOnoff</title>
+</head>
+<body>
+	<style type="text/css">
+		h1{
+			text-align: center;
+			border: 5px solid green;
+
+		}
+		#pic1
+		{
+			margin-left: 450px;
+		}
+		#btn
+		{
+		margin-left: 556px;	
+		}
+
+	</style>
+<h1 id="head">BULB ON/OFF USING JAVASCRIPT</h1>
+<div>
+	<figure>
+		<img src="images/onbulb.jpg" id="pic1" >
+		
+	</figure>
+	
+		<button id="btn" onclick="blbdata()">CLICKME</button>
+	
+	
+</div>
+</body>
+<script type="text/javascript">
+	function blbdata()
+	{
+		
+		{
+		let y=document.getElementById('pic1');
+
+	if(y.src.match('onbulb'))
+	{
+	 y.src="images/offbulb.jpg";
+	 head.style.color="red";
+	 head.style.background="blue";
+	 head.innerHTML="LIGHT OFF";
+
+	}
+	else
+	{
+		y.src='images/onbulb.jpg';
+		head.style.color="yellow";
+	 head.style.background="#000";
+	 head.innerHTML="LIGHT ON";
+	}
+}
+}	
+</script>
+</html>
